@@ -9,8 +9,7 @@
 - For Windows users- Windows is not a Unix-based operating system. You will need to download and install a program to emulate Unix on your machine. Cygwin is a free, open-source program to create a Unix-like environment in the Windows operating system. To install and setup Cygwin:
   1. Download the Cygwin executable https://cygwin.com/install.html. (The 32-bit executable file, setup-x86.exe should work on 32-bit or 64-bit machines if you don't know which you have.) 
   2. Open the downloaded .exe file; begin the setup program. 
-  3. Default options should all be fine. Select any download site. Proceed with program download and install until you reach the Select Packages window
-  4. [[file:preamble.org_imgs/20180429_184403_17928K51.png]]
+  3. Default options should all be fine. Select any download site. Proceed with program download and install until you reach the Select Packages window: [[file:images/20180429_184403_17928K51.png]]
   5. Install required packages.
      - Cygwin is a windows program that tries to mimic what a Unix machine would do. To keep the install small, it's functionality is very limited. For this workshop, we need to add the functionality of a couple packages.
      - Keep the default packages that are already selected.
