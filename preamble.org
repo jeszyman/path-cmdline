@@ -1,42 +1,37 @@
 * tl;dr
-    - Bring a computer. 
-    - If the computer is a Mac or linux machine, you're done.
-    - If the computer runs Windows, you need to download some stuff. See Tools below 
+- Bring a computer. 
+- If the computer is a Mac or Linux machine, you're done.
+- If the computer runs Windows, you need to download some stuff. See Tools below.  
 * Tools
-  - To do this workshop, you will need some kind of Unix-based command line interface. If you have a Mac or Linux machine, then you are already using a Unix-based operating system. To open a command line interface: 
-    - For Linux, type <CTRL> + <TAB> + <t> (i.e. hold down all three keys at the same time) Or just find and open the program call xterm
-    - For Mac users, find and open the program called terminal
-  - For Windows users- Windows is not a Unix-based operating system. You will need to download and install a program to emulate Unix on your machine. Cygwin is a free, open-source program to create a Unix-like environment in the Windows operating system. To install and setup Cygwin:
-    1. Download the Cygwin executable https://cygwin.com/install.html. (The 32-bit executable file, setup-x86.exe should work on 32-bit or 64-bit machines if you don't know which you have.) 
-    2. Open the downloaded .exe file; begin the setup program. 
-    3. Default options should all be fine; proceed with program download and install until you reach the Select Packages window
-    4. Install required packages. Cygwin is a windows program that tries to mimic what a Unix machine would do. To keep the install small, it's functionality is limited. For this workshop, we need to add the functionality of several packages.
-       1. Keep the default packages that are already selected.
-       2. Find the following packages using the search bar and add them:
-          1. git [[file:images/20180429_154850_179289uv.png]]
-          2. openssh [[file:preamble.org_imgs/20180429_154800_17928wkp.png]]
-    5. Click next and complete install
-    6. The cygwin program lives in a folder just below your root C:\ directory at C:\cygwin and you can remove it by deleting that folder
-- Summary of Materials and Access
-  - All workshop materials are on Github at https://github.com/jeszyman/path-cmdline/
-  - You can download all workshop materials by cloning the GitHub repository:
-  - : git clone https://github.com/jeszyman/path-cmdline.git
-  - Built off commands- started wtih list of commands, then decriptions, now some narrative text. It's enough maybe to follow on your own, but not yet complete w/o the workshop interaction 
-
-
-git://github.com/jeszyman/path-cmdline.git 
+- To do this workshop, you will need some kind of Unix-based command line interface. If you have a Mac or Linux machine, then you are already using a Unix-based operating system. To open a command line interface: 
+  - For Linux, type <CTRL> + <TAB> + <t> (i.e. hold down all three keys at the same time) or just find and open the program call xterm. 
+  - For Mac users, find and open the program called terminal. 
+- For Windows users- Windows is not a Unix-based operating system. You will need to download and install a program to emulate Unix on your machine. Cygwin is a free, open-source program to create a Unix-like environment in the Windows operating system. To install and setup Cygwin:
+  1. Download the Cygwin executable https://cygwin.com/install.html. (The 32-bit executable file, setup-x86.exe should work on 32-bit or 64-bit machines if you don't know which you have.) 
+  2. Open the downloaded .exe file; begin the setup program. 
+  3. Default options should all be fine. Select any download site. Proceed with program download and install until you reach the Select Packages window
+  4. [[file:preamble.org_imgs/20180429_184403_17928K51.png]]
+  5. Install required packages.
+     - Cygwin is a windows program that tries to mimic what a Unix machine would do. To keep the install small, it's functionality is very limited. For this workshop, we need to add the functionality of a couple packages.
+     - Keep the default packages that are already selected.
+     - Change the View to Full
+     - Find the following packages using the search bar and add them by clicking the "Skip" column:
+       1. git [[file:preamble.org_imgs/20180429_184609_179288CF.png]] (The one that's 5,946k)
+       2. openssh [[file:preamble.org_imgs/20180429_184654_17928JNL.png]] (The 747k one)
+  6. Click next- You may get a window titled "Resolving Dependencies". Again, choose the default (Select required packages) and complete install.   
+  7. The cygwin program lives in a folder just below your root directory at C:\cygwin and you can remove it by deleting that folder
 * Overview or Work
-    - This workshop will be an interactive introduction to the basic functions of a Unix operating system. It will consist of exercises and examples to be performed in your terminal emulator using the files provided from [[https://github.com/jeszyman/path-cmdline][GitHub]]. Basically, just type the stuff that is formatted as a command:
+- This workshop will be an interactive introduction to the basic functions of a Unix operating system. It will consist of exercises and examples to be performed in your terminal emulator using the files provided from [[https://github.com/jeszyman/path-cmdline][GitHub]]. Basically, just type the stuff that is formatted as a command:
 
 =like this=
 
-    - When a command requires you to choose an input, I'll put that input into <BRACKETS> like this: 
+- When a command requires you to choose an input, I'll put that input into <BRACKETS> like this: 
 
 =mkdir ~/<DIRECTORY NAME>=
 
-    - I also use that notation to designate specific keys like this: 
+- I also use that notation to designate specific keys like this: 
 
 =<CTRL>+<ALT>+<DEL>=
 
-    - Text on a new line implies that we have hit the <RETURN> key. 
-    - Most of the commands that I show you during the workshop should be in the session guide on GitHub. 
+- Text on a new line implies that we have hit the <RETURN> key. 
+- Most of the commands that I show you during the workshop should be in the session guide on [[https://github.com/jeszyman/path-cmdline/][GitHub]] (not finished yet). 
