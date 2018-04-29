@@ -13,7 +13,7 @@
     4. Install required packages. Cygwin is a windows program that tries to mimic what a Unix machine would do. To keep the install small, it's functionality is limited. For this workshop, we need to add the functionality of several packages.
        1. Keep the default packages that are already selected.
        2. Find the following packages using the search bar and add them:
-          1. git [[file:preamble.org_imgs/20180429_154850_179289uv.png]]
+          1. git [[file:images/20180429_154850_179289uv.png]]
           2. openssh [[file:preamble.org_imgs/20180429_154800_17928wkp.png]]
     5. Click next and complete install
     6. The cygwin program lives in a folder just below your root C:\ directory at C:\cygwin and you can remove it by deleting that folder
