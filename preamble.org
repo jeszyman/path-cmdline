@@ -9,14 +9,15 @@
 - For Windows users- Windows is not a Unix-based operating system. You will need to download and install a program to emulate Unix on your machine. Cygwin is a free, open-source program to create a Unix-like environment in the Windows operating system. To install and setup Cygwin:
   1. Download the Cygwin executable https://cygwin.com/install.html. (The 32-bit executable file, setup-x86.exe should work on 32-bit or 64-bit machines if you don't know which you have.) 
   2. Open the downloaded .exe file; begin the setup program. 
-  3. Default options should all be fine. Select any download site. Proceed with program download and install until you reach the Select Packages window: [[file:images/20180429_184403_17928K51.png]]
+  3. Default options should all be fine. Select any download site. Proceed with program download and install until you reach the Select Packages window: 
+     [[file:images/20180429_184403_17928K51.png]]
   5. Install required packages.
      - Cygwin is a windows program that tries to mimic what a Unix machine would do. To keep the install small, it's functionality is very limited. For this workshop, we need to add the functionality of a couple packages.
      - Keep the default packages that are already selected.
      - Change the View to Full
      - Find the following packages using the search bar and add them by clicking the "Skip" column:
-       1. git [[file:preamble.org_imgs/20180429_184609_179288CF.png]] (The one that's 5,946k)
-       2. openssh [[file:preamble.org_imgs/20180429_184654_17928JNL.png]] (The 747k one)
+       1. git [[file:images/20180429_184609_179288CF.png]] (The one that's 5,946k)
+       2. openssh [[file:images/20180429_184654_17928JNL.png]] (The 747k one)
   6. Click next- You may get a window titled "Resolving Dependencies". Again, choose the default (Select required packages) and complete install.   
   7. The cygwin program lives in a folder just below your root directory at C:\cygwin and you can remove it by deleting that folder
 * Overview or Work
