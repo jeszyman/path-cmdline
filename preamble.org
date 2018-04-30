@@ -20,7 +20,7 @@
        2. openssh [[file:images/20180429_184654_17928JNL.png]] (The 747k one)
   6. Click next- You may get a window titled "Resolving Dependencies". Again, choose the default (Select required packages) and complete install.   
   7. The cygwin program lives in a folder just below your root directory at C:\cygwin and you can remove it by deleting that folder
-* Overview or Work
+* Overview of Work
 - This workshop will be an interactive introduction to the basic functions of a Unix operating system. It will consist of exercises and examples to be performed in your terminal emulator using the files provided from [[https://github.com/jeszyman/path-cmdline][GitHub]]. Basically, just type the stuff that is formatted as a command:
 
 =like this=
