@@ -18,6 +18,7 @@
      - Find the following packages using the search bar and add them by clicking the "Skip" column:
        1. git [[file:images/20180429_184609_179288CF.png]] (The one that's 5,946k)
        2. openssh [[file:images/20180429_184654_17928JNL.png]] (The 747k one)
+       3. nano: Enhanced clone of Pico editor (509k)
   6. Click next- You may get a window titled "Resolving Dependencies". Again, choose the default (Select required packages) and complete install.   
   7. The cygwin program lives in a folder just below your root directory at C:\cygwin and you can remove it by deleting that folder
 * Overview of Work
