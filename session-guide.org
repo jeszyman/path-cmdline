@@ -1,11 +1,12 @@
 * Introduction: What is the command line and why should I care
-List of important terms (in practice, these are often all used interchangeably)
-- Command line interface: a means of interacting with a computer where the user issues commands to the program in the form of successive lines of text
+** List of important terms (in practice, these are often all used interchangeably)
+- Command line interface (CLI): a means of interacting with a computer where the user issues commands to the program in the form of successive lines of text
 - Bash: a shell for Unix
-- Shell: the means of accessing a computer's operating system services. Can be either CLI or GUI
+- Shell: the means of accessing a computer's operating system services. Can be either CLI or graphical user interface (GUI)
 - Terminal: Traditionally computer hardware used to enter data (teletype)
 - Terminal emulator: Software program the behaves like the output of a hardware terminal
 
+** Unix
 Unix is family of multitasking, multiuser computer operating systems that derive from the original AT&T Unix developed in the 1970s. Linux and Apple's macOS are Unix-based operating systems. All common operating systems have some kind of command line interface (i.e. Windows Command Prompt), but the command line interface of Unix systems is unique in several ways:
 
 - Often, such as when connecting to a remote server there is no graphical user interface available, and the command line interface is the only way to interact with the system.
@@ -15,23 +16,23 @@ Unix is family of multitasking, multiuser computer operating systems that derive
 Try: 
 : cd ~/path-cmdline | touch newfile.txt | echo "text" > new.file.txt 
   
-- In Unix systems, text is a universal interface. This allows you to interact with the computer at a direct and basic level not possible in other operating systems. Settings files are an example of this very direct interaction through text. You can fundamentally how your computer functions by altering a few lines in a text file. 
+- In Unix systems, text is a universal interface. This allows you to interact with the computer at a direct and basic level not possible in other operating systems. Settings files are an example of this very direct interaction through text. You can fundamentally change how your computer functions by altering a few lines in a text file. 
 
 Try: 
 : echo "alias givedate='date'" > ~/.bash_profile
 
-By the standard of personal computer market share, Unix operating systems are in the minority. But Unix is the lingua franca of several fields and applications associated with pathology and laboratory medicine including: 
+By the standard of personal computer market share, Unix operating systems are in the minority. But Unix is the /lingua franca/ of several fields and applications associated with pathology and laboratory medicine including: 
 - Shared and distributed resources such as
-  - Servers and computing clusters
-  - Virtual machines and containers such as Docker
-- Bioinformatics programs and software
-- Statistical computing programs and software
+  - Servers and computing clusters- any pathology trainee can access Wash U's [[https://www.mir.wustl.edu/research/research-support-facilities/center-for-high-performance-computing-chpc][CPHC computing cluster]]
+  - Virtual machines and containers such as Docker (e.g. https://sbu-bmi.github.io/quip_distro/)
+- [[https://onlinelibrary.wiley.com/doi/abs/10.1002/9781118782392.ch1][Bioinformatics programs and software]]
+- [[https://www.datascienceatthecommandline.com/index.html][Statistical computing and data science programs and software]]
 
 The syntax of the Unix command line is also shared by many other computing tools. 
 
 * Unix operating system structure and navigation
-- Unix Directory Structure
-  - [[file:session-guide.org_imgs/20180501_081944_27006980.png]] http://www.rhyshaden.com/unix.htm
+** Unix Directory Structure
+  - [[file:images/20180501_081944_27006980.png]] http://www.rhyshaden.com/unix.htm
   - When you open a command line interface, you will always start at your home directory (e.g. folder). You can always find this personal directory using the tilda (~):
 
 : cd ~
@@ -44,7 +45,7 @@ or on Mac
 
 Above the personal directories are system-level files and settings. You should mostly stay away from these for now.  
 
-- Basic Unix Navigation Commands:
+** Basic Unix Navigation Commands:
   | Command | Function                          | Example                        |
   |---------+-----------------------------------+--------------------------------|
   | pwd     | Print working directory           | pwd                            |
@@ -59,10 +60,10 @@ Above the personal directories are system-level files and settings. You should m
   |---------+-----------------------------------+--------------------------------|
   | *       | Wildcard                          | ls *.txt                       |
   | >       | Redirect output                   | head file.txt > top.txt        |
-  | \vert   | Pipe- run commands in succession  |                                |
-- Command Options
+  | \vert   | Pipe- run commands in succession  | history \vert grep "rm"        |
 
-The basic structure of Unix commands is [command] [options]. Options are command modifiers which give additional instructions about what you want a command to do. Command options are found in the tool's manual page (man). ls is a tool with many commonly used options. Try:
+- Command Options
+The basic structure of Unix commands is [command] [options]. Options are command modifiers which give additional instructions about what you want a command to do. Command options are found in the tool's manual page (=man=). =ls= is a tool with many commonly used options. Try:
 
 : cd ~/path-cmdline
 : ls -tr1
@@ -84,10 +85,10 @@ or
 : drwxrwxrwx 
 
 The meaning of each letter: 
-
-http://linuxcommand.org/lc3_lts0090.php
+[[file:images/20180501_141801_27006vGE.png]]
+From http://linuxcommand.org/lc3_lts0090.php
  
-We change permissions for files and directories with the chmod command. To allow the owner (you) but not group members or other users to read and write a file:
+We change permissions for files and directories with the =chmod= command. To allow the owner (you) but not group members or other users to read and write a file:
 
 : chmod 700 <FILE>
 
@@ -100,17 +101,17 @@ Directory permissions are commonly a concern for executing instructions in a fil
 : chmod -x <FILE>.sh
 
 - Getting help with Unix navigation
+  - Online, often stack exchange sites are the best resource. 
   - Manual pages- each unix command is a tool, and each tool has a manual page which can be accessed with
 * Manipulating text with command line utilities 
 - Example pathology reports from https://training.seer.cancer.gov/abstracting/procedures/pathological/histologic/operative/example/
 - Commands for Manipulating Text
-  | Command | Function                        | Example                 |
-  |---------+---------------------------------+-------------------------|
-  | wc      | Counts words                    | wc -l file.txt          |
-  | grep    | Finds patterns in text files    | grep -i "word" file.txt |
-  | awk     | Tool for tabular data           |                         |
-  | sed     | Advanced tool for text          |                         |
-  |         |                                 |                         |
+  | Command | Function                     | Example                 |
+  |---------+------------------------------+-------------------------|
+  | wc      | Counts words                 | wc -l file.txt          |
+  | grep    | Finds patterns in text files | grep -i "word" file.txt |
+  | awk     | Tool for tabular data        | awk ' {print $1,$3} '   |
+  | sed     | Advanced tool for text       | sed '/./!d' file.txt    |
 
 Try: 
 
@@ -130,15 +131,19 @@ Unix has useful tools for processing data in tables. For text files, tabular dat
 : cd ~/path-cmdline/genomics
 : head transcriptome.gtf
 : awk '$3 == "CDS"' transcriptome.gtf
-: awk '$3 == "
+: awk -F "\t" '$3 == "gene" { print $1 }' transcriptome.gtf
 
+
+- Help with regular expressions
+  - [[https://stackoverflow.com/questions/22937618/reference-what-does-this-regex-mean/22944075#22944075][stack overflow regex guide]]
+  - https://regexr.com/
 * Shell scripting- simple command line code
 
 A script is a file containing a series of commands within a format that a computer program recognizes. Unix recognizes scripts as files that start with the line (called a shebang): 
 
 : #!/bin/bash
 
-and saved with the suffix \verb!.sh!
+and saved with the suffix .sh
 
 Let's create a first shell script: 
 
@@ -151,7 +156,7 @@ In the nano editor, write:
 : echo "First Bash Script" 
 : exit 
 
-You see the first line is the shebang. The second is a comment- a note for us humans, not the computer. Comments begin with the pound (#) symbol. The third line is for the computer- \verb!echo! directs the computer to print what comes next in quotations. End bash scripts with the line "exit". Press <CTRL> + x to exit the nano editor.  
+You see the first line is the shebang. The second is a comment- a note for us humans, not the computer. Comments begin with the pound (#) symbol. The third line is for the computer- =echo= directs the computer to print what comes next in quotations. End bash scripts with the line "exit". Press <CTRL> + x to exit the nano editor.  
 
 Confirm that the file is executable by looking at permissions: 
 
@@ -162,45 +167,10 @@ And run the bash script:
 
 : bash first.bash.sh
 
-Let's write a more complicated bash script.
-
-: nano second.bash.script
-
-In the nano editor, type: 
-
-: #!/bin/bash
-
-: # Move to the directory: 
-
-: cd ~/session1/mods.fastqs
-
-: # Write the for-loop: 
-
-: for i in *out; do fastx_trimmer -f 7 -i $i -o $i.trim; done
-
-: # Merge the trimmed reads into one file: 
-
-: cat *.trim > all.trimmed.fastqs
-
-: exit 
-
-Press <CTRL> + x then <ENTER> to save the script, then run it: 
-
-: bash second.bash.script
-
-* Command line tools for pathology, lab medicine, and research
-  - Access to platforms
-    - repos
-    - APIs
-    - Virtual machines
-  - Text tools
-  - Data tools
-    - Datasets
-  - Bioinformatics tools
-    - https://www.reddit.com/r/bioinformatics/comments/7xsz6z/what_are_some_of_your_favorite_commandline_tricks/
-  - Imaging tools
-  - Servers
-  - https://www.datascienceatthecommandline.com/
-  - Unix is the lingua franca of several patholgy related fields
-  - Scaled computer solutions, cloud computing
 * Servers, secure shell, and command line communication
+
+In class exercise only. 
+
+Once connected to the server, try
+
+: echo "<WRITE A NOTE>" > group.txt
