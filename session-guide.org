@@ -174,3 +174,12 @@ In class exercise only.
 Once connected to the server, try
 
 : echo "<WRITE A NOTE>" > group.txt
+* More Unix guides and links
+- http://www.ee.surrey.ac.uk/Teaching/Unix/
+- [[http://linuxcommand.org/][LinuxCommand.org]]
+- [[http://korflab.ucdavis.edu/Unix_and_Perl/current.html][UC Davis Unix and Perl for biologists]]
+- http://www.chm.bris.ac.uk/compres/unix/index.html
+- [[http://cecs.wright.edu/~p/mateti/Courses/333/Top/index.html][Wright State CEG 333: Introduction to Unix]]
+- [[http://www.commandlinefu.com/commands/browse/sort-by-votes][commandlinefu]]
+- [[https://en.wikibooks.org/wiki/Guide_to_Unix][wikibooks: unix]]
+- [[http://mywiki.wooledge.org/FullBashGuide][Full bash guide]]
