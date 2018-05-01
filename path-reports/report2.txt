@@ -1,0 +1,51 @@
+Path. No.: S91-1700
+
+Name: Lilly McDermott
+Reg. No.: 000039
+
+Age: 47
+Sex: Female
+Race: White
+Location: _____
+Date: 02/20/91
+
+Address:________________________
+Occupation:________________
+
+History of Case: 47 year-old white female with (L) UOQ breast mass
+
+Clinical Diagnosis: Carcinoma of breast
+
+Post-operative Diagnosis: Same
+
+Surgeon: John Myeolmus, MD
+Operation: L radical mastectomy
+
+Specimen:
+Left breast biopsy
+Apical axillary tissue
+Contents of left radical mastectomy
+Gross Description:
+Part #1 is labeled "left breast biopsy" and is received fresh after frozen section preparation. It consists of a single very firm nodularity measuring 3 cm in circular diameter and 1.5 cm in thickness, surrounded by adherent fibrofatty tissue. On section a pale gray, slightly mottled appearance is revealed. Numerous sections are submitted for permanent processing.
+
+Part #2 is labeled "apical left axillary tissue" and is received fresh. It consists of two amorphous fibrofatty tissue masses without grossly discernible lymph nodes therein. Both pieces are rendered into numerous sections and submitted in their entirety for histology.
+
+Part #3 is labeled "contents of left radical mastectomy" and is received fresh. It consists of a large ellipse of skin overlying breast tissue, the ellipse measuring 20 cm in length and 14 cm in height. A freshly sutured incision extends 3 cm directly lateral from the areola, corresponding to the closure for removal of part #1. Abundant amounts of fibrofatty connective tissue surround the entire breast, and the deep aspect includes an 8 cm length of pectoralis minor and a generous mass of overlying pectoralis major muscle. Incision from the deepest aspect of the specimen beneath the tumor mass reveals tumor extension grossly to within 0.5 cm of muscle. Sections are submitted according to the following code: DE - deep surgical resection margins; SU, LA, INF, ME - full thickness radial respectively; NI - nipple and subjacent tissue. Lymph nodes dissected free from axillary fibrofatty tissue from levels I, II, and III will be labeled accordingly.
+
+Microscopic:
+Sections of part #1 confirm frozen section diagnosis of infiltrating duct carcinoma. It is to be noted that the tumor cells show considerable pleomorphism, and mitotic figures are frequent (as many as 4 per high power field). Many foci of calcification are present within the tumor.
+
+Part #2 consists of fibrofatty tissue and a single tiny lymph node free of disease.
+
+Part #3 includes 18 lymph nodes, three from Level III, two from Level II and thirteen from Level I. All lymph nodes are free of disease with the exception of one Level I lymph node which contains several masses of metastatic carcinoma.
+
+All sections taken radially from the superficial center of the resection site fail to include tumor, indicating the tumor to have originated deep within the breast parenchyma. Similarly, there is no malignancy in the nipple region, or in the lactiferous sinuses.
+
+Sections of deep surgical margin demonstrate diffuse tumor infiltration of deep fatty tissues, however, there is no invasion of muscle. Total size of primary tumor is estimated to be 4 cm in greatest dimension.
+
+Diagnosis:
+Infiltrating duct carcinoma, left breast.
+Metastatic carcinoma, left axillary lymph node (1), Level I.
+Lymph nodes, no pathologic diagnosis, left axilla, Level I (12), Level II (2), Level III (3).
+Justine A. Glance, MD
+Pathologist
